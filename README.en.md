@@ -1,6 +1,6 @@
 # front-taste-ref
 
-| [中文版](README.md) | **English** |
+| [中文](README.md) | **English** |
 | :---: | :---: |
 
 Start with a product URL, find the official sites for that company or product, and study a sample of their live pages. The skill turns useful patterns in typography, layout, components, and mobile behavior into a reference for frontend development. Use it to find a visual direction for a new page or document the design rules of your own site.
