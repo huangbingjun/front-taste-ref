@@ -1,0 +1,4 @@
+interface:
+  display_name: "前端风格研究"
+  short_description: "研究官方站点的视觉风格，交付有证据的设计变量与前端开发参考"
+  default_prompt: "使用 $front-taste-ref 研究这个官网及相关官方站点，输出前端风格参考包。"

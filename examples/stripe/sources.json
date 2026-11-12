@@ -1,0 +1,948 @@
+{
+  "schema_version": 1,
+  "subject": "Stripe",
+  "input_urls": [
+    "https://stripe.com/"
+  ],
+  "captured_at": "2026-11-12T06:18:51.381Z",
+  "coverage": {
+    "status": "sampled",
+    "limits": {
+      "sites": 8,
+      "candidate_pages": 30,
+      "analyzed_pages": 7
+    },
+    "counts": {
+      "confirmed_sites": 8,
+      "visual_sites": 3,
+      "candidate_pages": 30,
+      "observed_pages": 6,
+      "limited_pages": 1,
+      "blocked_pages": 1,
+      "uninspected_pages": 22,
+      "desktop_page_types": 5,
+      "narrow_page_types": 4
+    },
+    "stop_reason": "达到本次精简验收的站点、候选 URL 与深读预算。",
+    "gaps": [
+      "站点地图存在超出采样预算的 URL。官网 sitemap 首个分片超出单文件读取上限。",
+      "stripe.events、stripe.global、其他已发现入口及其它语言区域未纳入采样。",
+      "Dashboard 账户内界面需要登录。Link 首屏部分媒体未渲染。",
+      "未全面验证触摸、键盘、交互状态、动效、实际字体、深色主题及中间断点。"
+    ]
+  },
+  "sites": [
+    {
+      "id": "S01",
+      "origin": "https://stripe.com",
+      "group": "Stripe 营销",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E01",
+        "E02"
+      ],
+      "reason": "输入官网，官方域名说明印证。"
+    },
+    {
+      "id": "S02",
+      "origin": "https://docs.stripe.com",
+      "group": "Stripe 开发者文档",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E01"
+      ],
+      "reason": "官网开发者文档入口。"
+    },
+    {
+      "id": "S03",
+      "origin": "https://link.com",
+      "group": "Link 独立产品",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E02",
+        "E03"
+      ],
+      "reason": "Stripe 产品站及官方域名说明确认。"
+    },
+    {
+      "id": "S04",
+      "origin": "https://support.stripe.com",
+      "group": "Stripe 支持",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E01",
+        "E02"
+      ],
+      "reason": "官网支持入口，读取官方域名说明。"
+    },
+    {
+      "id": "S05",
+      "origin": "https://dashboard.stripe.com",
+      "group": "Stripe 后台",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E01",
+        "E28"
+      ],
+      "reason": "官网登录入口，账户内界面受登录限制。"
+    },
+    {
+      "id": "S06",
+      "origin": "https://status.stripe.com",
+      "group": "Stripe 状态",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E01"
+      ],
+      "reason": "官网页脚状态入口，未采样视觉。"
+    },
+    {
+      "id": "S07",
+      "origin": "https://press.stripe.com",
+      "group": "Stripe 新闻媒体",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E01"
+      ],
+      "reason": "官网页脚媒体入口，未采样视觉。"
+    },
+    {
+      "id": "S08",
+      "origin": "https://stripe.dev",
+      "group": "Stripe 开发者社区",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E01",
+        "E02"
+      ],
+      "reason": "官网开发者入口，未采样视觉。"
+    },
+    {
+      "id": "S09",
+      "origin": "https://stripecommunity.com",
+      "group": "待确认",
+      "status": "unverified",
+      "evidence_ids": [
+        "E29"
+      ],
+      "reason": "保留外链线索，未核实运营归属。"
+    },
+    {
+      "id": "S10",
+      "origin": "https://www.linkedin.com",
+      "group": "第三方平台",
+      "status": "excluded",
+      "evidence_ids": [
+        "E06"
+      ],
+      "reason": "博客作者链接不能将整个外部平台纳入研究。"
+    }
+  ],
+  "pages": [
+    {
+      "id": "P01",
+      "site_id": "S01",
+      "url": "https://stripe.com/",
+      "final_url": "https://stripe.com/en-sg",
+      "page_type": "首页",
+      "locale": "en-SG",
+      "status": "observed",
+      "discovered_from": [
+        "https://stripe.com/"
+      ],
+      "reason": null
+    },
+    {
+      "id": "P02",
+      "site_id": "S01",
+      "url": "https://stripe.com/payments",
+      "final_url": "https://stripe.com/en-sg/payments",
+      "page_type": "产品",
+      "locale": "en-SG",
+      "status": "observed",
+      "discovered_from": [
+        "https://stripe.com/en-sg"
+      ],
+      "reason": null
+    },
+    {
+      "id": "P03",
+      "site_id": "S01",
+      "url": "https://stripe.com/pricing",
+      "final_url": "https://stripe.com/en-sg/pricing",
+      "page_type": "定价",
+      "locale": "en-SG",
+      "status": "observed",
+      "discovered_from": [
+        "https://stripe.com/en-sg"
+      ],
+      "reason": null
+    },
+    {
+      "id": "P04",
+      "site_id": "S02",
+      "url": "https://docs.stripe.com/",
+      "final_url": "https://docs.stripe.com/",
+      "page_type": "文档",
+      "locale": "en-US",
+      "status": "observed",
+      "discovered_from": [
+        "https://stripe.com/en-sg",
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": null
+    },
+    {
+      "id": "P05",
+      "site_id": "S02",
+      "url": "https://docs.stripe.com/payments",
+      "final_url": "https://docs.stripe.com/payments",
+      "page_type": "文档",
+      "locale": "en-US",
+      "status": "observed",
+      "discovered_from": [
+        "https://docs.stripe.com/"
+      ],
+      "reason": null
+    },
+    {
+      "id": "P06",
+      "site_id": "S01",
+      "url": "https://stripe.com/blog",
+      "final_url": "https://stripe.com/blog",
+      "page_type": "内容",
+      "locale": "en-US",
+      "status": "observed",
+      "discovered_from": [
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": null
+    },
+    {
+      "id": "P07",
+      "site_id": "S03",
+      "url": "https://link.com/",
+      "final_url": "https://link.com/en-sg",
+      "page_type": "首页",
+      "locale": "en-SG",
+      "status": "limited",
+      "discovered_from": [
+        "https://support.stripe.com/questions/verify-you-are-on-an-official-stripe-webpage?locale=en-GB",
+        "https://stripe.com/payments/link"
+      ],
+      "reason": "首屏媒体未渲染，样式结论仅涵盖可见部分。"
+    },
+    {
+      "id": "P08",
+      "site_id": "S01",
+      "url": "https://stripe.com/en-sg/products",
+      "final_url": null,
+      "page_type": "产品目录",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P09",
+      "site_id": "S08",
+      "url": "https://stripe.dev/",
+      "final_url": null,
+      "page_type": "开发者站首页",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P10",
+      "site_id": "S01",
+      "url": "https://stripe.com/en-sg/managed-payments",
+      "final_url": null,
+      "page_type": "产品",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P11",
+      "site_id": "S01",
+      "url": "https://stripe.com/en-sg/payments/checkout",
+      "final_url": null,
+      "page_type": "产品",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P12",
+      "site_id": "S01",
+      "url": "https://stripe.com/en-sg/payments/elements",
+      "final_url": null,
+      "page_type": "产品",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P13",
+      "site_id": "S01",
+      "url": "https://stripe.com/en-sg/terminal",
+      "final_url": null,
+      "page_type": "产品",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P14",
+      "site_id": "S01",
+      "url": "https://stripe.com/en-sg/payments/link",
+      "final_url": null,
+      "page_type": "产品",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P15",
+      "site_id": "S01",
+      "url": "https://stripe.com/en-sg/billing",
+      "final_url": null,
+      "page_type": "产品",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P16",
+      "site_id": "S01",
+      "url": "https://stripe.com/en-sg/customers/amazon",
+      "final_url": null,
+      "page_type": "客户案例",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P17",
+      "site_id": "S01",
+      "url": "https://stripe.com/en-sg/newsroom/news/stripe-openai-instant-checkout",
+      "final_url": null,
+      "page_type": "公司新闻",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P18",
+      "site_id": "S02",
+      "url": "https://docs.stripe.com/get-started",
+      "final_url": null,
+      "page_type": "文档",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://docs.stripe.com/"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P19",
+      "site_id": "S02",
+      "url": "https://docs.stripe.com/api",
+      "final_url": null,
+      "page_type": "API 参考",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P20",
+      "site_id": "S02",
+      "url": "https://docs.stripe.com/connect",
+      "final_url": null,
+      "page_type": "文档",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://docs.stripe.com/"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P21",
+      "site_id": "S02",
+      "url": "https://docs.stripe.com/payments/checkout",
+      "final_url": null,
+      "page_type": "文档",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P22",
+      "site_id": "S02",
+      "url": "https://docs.stripe.com/billing",
+      "final_url": null,
+      "page_type": "文档",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg/payments"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P23",
+      "site_id": "S02",
+      "url": "https://docs.stripe.com/get-started/account/checklist",
+      "final_url": null,
+      "page_type": "文档",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://docs.stripe.com/sitemap.xml"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P24",
+      "site_id": "S02",
+      "url": "https://docs.stripe.com/account/approvals",
+      "final_url": null,
+      "page_type": "文档",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://docs.stripe.com/sitemap.xml"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P25",
+      "site_id": "S03",
+      "url": "https://link.com/en-sg/agents",
+      "final_url": null,
+      "page_type": "产品",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://link.com/en-sg"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P26",
+      "site_id": "S03",
+      "url": "https://link.com/en-sg/privacy",
+      "final_url": null,
+      "page_type": "政策",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://link.com/en-sg"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P27",
+      "site_id": "S04",
+      "url": "https://support.stripe.com/",
+      "final_url": null,
+      "page_type": "帮助中心",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P28",
+      "site_id": "S05",
+      "url": "https://dashboard.stripe.com/",
+      "final_url": "https://dashboard.stripe.com/login",
+      "page_type": "后台",
+      "locale": null,
+      "status": "blocked",
+      "discovered_from": [
+        "https://stripe.com/en-sg"
+      ],
+      "reason": "账户界面需要登录。"
+    },
+    {
+      "id": "P29",
+      "site_id": "S06",
+      "url": "https://status.stripe.com/",
+      "final_url": null,
+      "page_type": "状态",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg"
+      ],
+      "reason": "发现后未深入分析。"
+    },
+    {
+      "id": "P30",
+      "site_id": "S07",
+      "url": "https://press.stripe.com/",
+      "final_url": null,
+      "page_type": "新闻媒体",
+      "locale": null,
+      "status": "candidate",
+      "discovered_from": [
+        "https://stripe.com/en-sg"
+      ],
+      "reason": "发现后未深入分析。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E01",
+      "page_id": null,
+      "url": "https://stripe.com/en-sg",
+      "captured_at": "2026-11-12T06:18:51.381Z",
+      "kind": "ownership",
+      "viewport": null,
+      "theme": null,
+      "state": null,
+      "observation": "Stripe 品牌官网及首页导航、页脚指向 Docs、Support、Dashboard、Status、Press 和 stripe.dev。",
+      "artifact": null
+    },
+    {
+      "id": "E02",
+      "page_id": null,
+      "url": "https://support.stripe.com/questions/verify-you-are-on-an-official-stripe-webpage?locale=en-GB",
+      "captured_at": "2026-11-12T06:27:34+00:00",
+      "kind": "ownership",
+      "viewport": null,
+      "theme": null,
+      "state": null,
+      "observation": "Stripe 帮助中心列出 stripe.com、stripe.dev、stripe.events、stripe.global 与 link.com 作为官方域名。",
+      "artifact": null
+    },
+    {
+      "id": "E03",
+      "page_id": null,
+      "url": "https://stripe.com/payments/link",
+      "captured_at": "2026-11-12T06:27:34+00:00",
+      "kind": "ownership",
+      "viewport": null,
+      "theme": null,
+      "state": null,
+      "observation": "Stripe 官网将 Link 介绍为由 Stripe 打造的数字钱包，并将 Link 产品链接指向 link.com。",
+      "artifact": null
+    },
+    {
+      "id": "E04",
+      "page_id": null,
+      "url": "https://stripe.com/sitemap/sitemap.xml",
+      "captured_at": "2026-11-12T06:27:34+00:00",
+      "kind": "text",
+      "viewport": null,
+      "theme": null,
+      "state": null,
+      "observation": "通过 stripe.com/robots.txt 定位到 sitemap 索引，包含 9 个分片。首个分片超过此次 2 MB 单文件读取上限。",
+      "artifact": null
+    },
+    {
+      "id": "E05",
+      "page_id": null,
+      "url": "https://docs.stripe.com/sitemap.xml",
+      "captured_at": "2026-11-12T06:27:34+00:00",
+      "kind": "text",
+      "viewport": null,
+      "theme": null,
+      "state": null,
+      "observation": "文档 sitemap 的 urlset 包含 5,213 条 loc，按本次候选预算仅选取少量条目。",
+      "artifact": null
+    },
+    {
+      "id": "E06",
+      "page_id": "P06",
+      "url": "https://stripe.com/blog",
+      "captured_at": "2026-11-12T06:18:58.974Z",
+      "kind": "text",
+      "viewport": null,
+      "theme": null,
+      "state": null,
+      "observation": "博客文章的作者资料链接指向 LinkedIn，外链用途为作者资料。",
+      "artifact": null
+    },
+    {
+      "id": "E07",
+      "page_id": "P01",
+      "url": "https://stripe.com/en-sg",
+      "captured_at": "2026-11-12T06:18:51.381Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "标题与主次行动左对齐，右侧为跨列彩色图形，下面是品牌标识带。",
+      "artifact": "evidence/home-desktop.jpeg"
+    },
+    {
+      "id": "E08",
+      "page_id": "P01",
+      "url": "https://stripe.com/en-sg",
+      "captured_at": "2026-11-12T06:19:00.921Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "首屏标题变短，主次行动上下堆叠并占满内容宽度，桌面大色块未出现。",
+      "artifact": "evidence/home-narrow.jpeg"
+    },
+    {
+      "id": "E09",
+      "page_id": "P01",
+      "url": "https://stripe.com/en-sg",
+      "captured_at": "2026-11-12T06:22:05.902Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "滚动后，scrollY≈760 CSS px",
+      "observation": "品牌标识带之后为左对齐的大段引导文字与宽窄并排的产品卡片。",
+      "artifact": "evidence/home-below.jpeg"
+    },
+    {
+      "id": "E10",
+      "page_id": "P01",
+      "url": "https://stripe.com/en-sg",
+      "captured_at": "2026-11-12T06:22:05.902Z",
+      "kind": "css",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "h1.hero-section__title 的 font-size 48px、line-height 55.2px、font-weight 300。主行动 a.hds-button--primary 的 background-color rgb(83, 58, 253)、border-radius 4px。",
+      "artifact": null
+    },
+    {
+      "id": "E11",
+      "page_id": "P02",
+      "url": "https://stripe.com/en-sg/payments",
+      "captured_at": "2026-11-12T06:18:52.780Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "主导航下有产品子导航。标题、说明与行动位于左列，首屏底缘用高饱和斜带转场。",
+      "artifact": "evidence/payments-desktop.jpeg"
+    },
+    {
+      "id": "E12",
+      "page_id": "P02",
+      "url": "https://stripe.com/en-sg/payments",
+      "captured_at": "2026-11-12T06:19:01.505Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "主导航缩为菜单，产品子导航保留单行，标题断为四行。主按钮和次链接纵向排列。",
+      "artifact": "evidence/payments-narrow.jpeg"
+    },
+    {
+      "id": "E13",
+      "page_id": "P02",
+      "url": "https://stripe.com/en-sg/payments",
+      "captured_at": "2026-11-12T06:22:06.902Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "滚动后，scrollY≈790 CSS px",
+      "observation": "斜带下方为四列图标与短文案，后一段浅色面上排列客户标识。",
+      "artifact": "evidence/payments-below.jpeg"
+    },
+    {
+      "id": "E14",
+      "page_id": "P02",
+      "url": "https://stripe.com/en-sg/payments",
+      "captured_at": "2026-11-12T06:22:06.902Z",
+      "kind": "css",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "h1.Copy__title 的 font-size 56px、line-height 68px、font-weight 500、color rgb(10, 37, 64)，边界框宽约 492 CSS px。首屏主行动 a.CtaButton.variant--Button 的背景 rgb(153, 102, 255)、圆角 16.5px。",
+      "artifact": null
+    },
+    {
+      "id": "E15",
+      "page_id": "P03",
+      "url": "https://stripe.com/en-sg/pricing",
+      "captured_at": "2026-11-12T06:18:53.635Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "标题下并排放置浅色标准面板与深色定制面板，彩色斜带从面板后经过。",
+      "artifact": "evidence/pricing-desktop.jpeg"
+    },
+    {
+      "id": "E16",
+      "page_id": "P03",
+      "url": "https://stripe.com/en-sg/pricing",
+      "captured_at": "2026-11-12T06:19:02.005Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "方案面板纵向排列，标准面板内的说明和价格纵向分区。",
+      "artifact": "evidence/pricing-narrow.jpeg"
+    },
+    {
+      "id": "E17",
+      "page_id": "P03",
+      "url": "https://stripe.com/en-sg/pricing",
+      "captured_at": "2026-11-12T06:22:07.094Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "滚动后，scrollY≈785 CSS px",
+      "observation": "面板之后是四列功能项，每项带图标、标题与短列表，列线保持对齐。",
+      "artifact": "evidence/pricing-below.jpeg"
+    },
+    {
+      "id": "E18",
+      "page_id": "P03",
+      "url": "https://stripe.com/en-sg/pricing",
+      "captured_at": "2026-11-12T06:22:07.094Z",
+      "kind": "css",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "h1.Copy__title 的 font-size 56px、line-height 68px、font-weight 500、color rgb(10, 37, 64)。标准方案主行动 a.CtaButton.variant--Button 的背景 rgb(99, 91, 255)、圆角 16.5px。",
+      "artifact": null
+    },
+    {
+      "id": "E19",
+      "page_id": "P04",
+      "url": "https://docs.stripe.com/",
+      "captured_at": "2026-11-12T06:18:57.994Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "搜索和分类导航置于页首，正文分组展示链接，下方有深色代码示例。",
+      "artifact": "evidence/docs-desktop.jpeg"
+    },
+    {
+      "id": "E20",
+      "page_id": "P04",
+      "url": "https://docs.stripe.com/",
+      "captured_at": "2026-11-12T06:19:04.971Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "顶部为紧凑导航，首屏内容纵向排列，产品列表为单列。",
+      "artifact": "evidence/docs-narrow.jpeg"
+    },
+    {
+      "id": "E21",
+      "page_id": "P04",
+      "url": "https://docs.stripe.com/",
+      "captured_at": "2026-11-12T06:18:57.994Z",
+      "kind": "css",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "文档首页 h1 的 font-size 32px、line-height 40px、font-weight 700、font-family -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"。",
+      "artifact": null
+    },
+    {
+      "id": "E22",
+      "page_id": "P05",
+      "url": "https://docs.stripe.com/payments",
+      "captured_at": "2026-11-12T06:18:58.797Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "双层顶部导航、左侧分类目录、白底阅读区。选项和卡片用细边界分层。",
+      "artifact": "evidence/docs-payments-desktop.jpeg"
+    },
+    {
+      "id": "E23",
+      "page_id": "P05",
+      "url": "https://docs.stripe.com/payments",
+      "captured_at": "2026-11-12T06:18:58.797Z",
+      "kind": "css",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "文档内容页 h1 的 font-size 32px、line-height 40px、font-weight 700、font-family -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"。",
+      "artifact": null
+    },
+    {
+      "id": "E24",
+      "page_id": "P06",
+      "url": "https://stripe.com/blog",
+      "captured_at": "2026-11-12T06:18:58.974Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "浅底网格与斜向色带上叠放宽白色文章卡片，正文靠左，卡片阴影将表面与背景分开。",
+      "artifact": "evidence/blog-desktop.jpeg"
+    },
+    {
+      "id": "E25",
+      "page_id": "P07",
+      "url": "https://link.com/en-sg",
+      "captured_at": "2026-11-12T06:19:00.209Z",
+      "kind": "screenshot",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "白底双栏，左列黑色大标题带亮绿强调。右列是未加载出媒体内容的浅灰区域。",
+      "artifact": "evidence/link-desktop.jpeg"
+    },
+    {
+      "id": "E26",
+      "page_id": "P07",
+      "url": "https://link.com/en-sg",
+      "captured_at": "2026-11-12T06:19:00.209Z",
+      "kind": "css",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "Link 首屏 h1 的 font-size 80px、line-height 72px、font-weight 500、font-family Matter, sans-serif。",
+      "artifact": null
+    },
+    {
+      "id": "E27",
+      "page_id": "P01",
+      "url": "https://stripe.com/en-sg",
+      "captured_at": "2026-11-12T06:19:00.921Z",
+      "kind": "css",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "theme": "light",
+      "state": "首屏，默认状态",
+      "observation": "窄视口首屏 h1 的 font-size 34px、line-height 35.02px；主行动边界框宽 358 CSS px。",
+      "artifact": null
+    },
+    {
+      "id": "E28",
+      "page_id": "P28",
+      "url": "https://dashboard.stripe.com/login",
+      "captured_at": "2026-11-12T06:27:34+00:00",
+      "kind": "text",
+      "viewport": null,
+      "theme": null,
+      "state": null,
+      "observation": "未登录请求从 Dashboard 根 URL 重定向到登录页。未进入账户界面。",
+      "artifact": null
+    },
+    {
+      "id": "E29",
+      "page_id": null,
+      "url": "https://stripe.com/en-sg",
+      "captured_at": "2026-11-12T06:18:51.381Z",
+      "kind": "text",
+      "viewport": null,
+      "theme": null,
+      "state": null,
+      "observation": "首页页脚出现 Stripe Community 链接，本次未取得足够独立归属证据。",
+      "artifact": null
+    }
+  ]
+}

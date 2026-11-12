@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+__pycache__/
+.pytest_cache/
+.cache/
+.venv/
+node_modules/
+.playwright/
+.playwright-cli/
+.firecrawl/
+/output/
+/taste-references/
