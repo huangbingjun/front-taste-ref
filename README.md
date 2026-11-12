@@ -1,8 +1,7 @@
 # front-taste-ref
 
-[网页版 / Web docs](https://huangbingjun.github.io/front-taste-ref/) · [中文版](#中文版) · [English](#english)
-
-<!-- readme:zh -->
+| [中文](#中文版) | [English](#english) |
+| :---: | :---: |
 
 ## 中文版
 
@@ -56,8 +55,6 @@ DISABLE_TELEMETRY=1 npx skills@1.8.1 add huangbingjun/front-taste-ref --skill fr
 
 - [Stripe 实测案例](examples/stripe/TASTE.md)
 - [行为验收场景与实测记录](evals/scenarios.md)
-
-<!-- readme:en -->
 
 ## English
 
