@@ -1,0 +1,16 @@
+{
+  "name": "front-taste-ref-catalog",
+  "owner": {
+    "name": "Junnn"
+  },
+  "metadata": {
+    "description": "Plugins for researching frontend design patterns."
+  },
+  "plugins": [
+    {
+      "name": "front-taste-ref",
+      "source": "./",
+      "description": "Research official product websites and turn observed design patterns into a sourced frontend style guide."
+    }
+  ]
+}

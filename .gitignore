@@ -13,3 +13,4 @@ node_modules/
 .firecrawl/
 /output/
 /taste-references/
+/dist/

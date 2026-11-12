@@ -1,0 +1,20 @@
+{
+  "name": "front-taste-ref-catalog",
+  "interface": {
+    "displayName": "Front Taste Ref"
+  },
+  "plugins": [
+    {
+      "name": "front-taste-ref",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

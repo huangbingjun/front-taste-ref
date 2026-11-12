@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "front-taste-ref",
+  "version": "1.0.0",
+  "description": "Research official product websites and turn observed design patterns into a sourced frontend style guide.",
+  "author": {
+    "name": "Junnn"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Front Taste Ref",
+        "shortDescription": "Research frontend styles",
+        "longDescription": "Analyze public company and product websites for visual patterns, responsive layouts, and design tokens. Produce a style guide with sources and implementation guidance. Coverage and evidence depend on the browsing capabilities available in the host.",
+        "developerName": "Junnn",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Website style research",
+          "Frontend design reference"
+        ],
+        "defaultPrompt": [
+          "Research the frontend style of this website and create a reusable design reference."
+        ],
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg"
+      }
+    }
+  }
+}
