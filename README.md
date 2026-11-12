@@ -1,10 +1,11 @@
 # front-taste-ref
 
+| **中文版** | [English](README.en.md) |
+| :---: | :---: |
+
 从一个产品网址出发，发现同一公司或产品的官方站点，取样分析真实页面，并把值得借鉴的排版、构图、组件和移动端行为整理成开发参考。适合给新产品页或现有界面找风格方向，也可用于记录自己的官网设计规则。
 
 ## 安装插件
-
-两个插件目录均使用 `front-taste-ref-catalog` 作为 Marketplace 名称。
 
 ### Codex
 
@@ -40,7 +41,7 @@ DISABLE_TELEMETRY=1 npx skills@1.8.1 add huangbingjun/front-taste-ref --skill fr
 
 > 使用 front-taste-ref 研究 https://stripe.com/ 及相关官方站点。我想给新的 SaaS 产品介绍页找风格参考，请分析营销页、文档站和独立产品的区别，输出中文参考包。
 
-> 使用 front-taste-ref 研究 https://stripe.com/en-sg/payments。仅分析 Stripe 官网和文档站，最多深入检查 8 页，给现有 React 项目提供产品介绍页的布局、组件及移动端建议。
+> 使用 front-taste-ref 研究 https://stripe.com/en-sg/payments 。仅分析 Stripe 官网和文档站，最多深入检查 8 页，给现有 React 项目提供产品介绍页的布局、组件及移动端建议。
 
 默认将结果写入当前工作区的 `taste-references/<品牌>/<时间戳>/`。在后续任务中把参考包路径交给 Agent，指定目标页面和约束，即可复用研究结果。
 
@@ -52,18 +53,3 @@ DISABLE_TELEMETRY=1 npx skills@1.8.1 add huangbingjun/front-taste-ref --skill fr
 
 - [Stripe 实测案例](examples/stripe/TASTE.md)
 - [行为验收场景与实测记录](evals/scenarios.md)
-
-## 维护与发布
-
-两边共用 `skills/front-taste-ref/` 下的源码。发新版时同步更新两个插件清单和 `SKILL.md` 的版本。在仓库根目录运行 `claude plugin validate .` 可检查 Claude Code 清单。在测试环境中可用 `codex plugin marketplace add .` 或 `claude plugin marketplace add .` 加载当前仓库，再运行相应的安装命令。
-
-提交发布版本后，从仓库根目录打包 OpenAI 的纯 Skill 插件 ZIP。
-
-```sh
-mkdir -p dist
-git archive --format=zip --output=dist/front-taste-ref.zip HEAD -- LICENSE plugin.json assets/icon.svg skills/front-taste-ref
-```
-
-使用已验证的开发者身份将 ZIP 上传到 OpenAI Platform Plugins，核对展示资料并提交审核。获批后可以发布到 ChatGPT 和 Codex 共用的公开目录。[OpenAI 提交流程](https://developers.openai.com/plugins/deploy/submission)
-
-Claude 的公开目录使用 GitHub 插件仓库作为提交来源，在 Anthropic 开发者门户申请。目录安装会同步到 Claude Code。若要使用 `@claude-plugins-official` 后缀，需由 Anthropic 收录到该 Marketplace。[Claude Code 发布说明](https://code.claude.com/docs/en/plugins/publish#submit-to-anthropics-directory)
